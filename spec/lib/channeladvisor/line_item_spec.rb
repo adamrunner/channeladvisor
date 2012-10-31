@@ -138,10 +138,6 @@ module ChannelAdvisor
 		  it "sets @is_fba" do
 		    @line_item.is_fba.should == attrs[:is_fba]
 		  end
-
-		  it "sets @promo_code" do
-		    @line_item.promo_code.should == attrs[:promo_code]
-		  end
 		end
 	end # LineItem
 end # ChannelAdvisor

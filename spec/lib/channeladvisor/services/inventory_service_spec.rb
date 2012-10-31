@@ -269,7 +269,7 @@ module ChannelAdvisor
         end
 
         before(:each) do
-          @last_request, @last_response = nil
+          @last_request, @last_response = nil   
           InventoryService.client.config.hooks.define(:sync_inventory_item, :soap_request) do |callback, request|
             @last_request = request.http
             @last_response = callback.call
